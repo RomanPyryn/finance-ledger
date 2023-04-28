@@ -15,20 +15,20 @@ code {
 }
 
 :root {
-	--text-color-first: #ffffff;
-	--text-color-second: #333333;
-	--text-color-third: #28a745;
-	--text-color-fourth: #0284d0;
+  --text-color-first: #ffffff;
+  --text-color-second: #333333;
+  --text-color-third: #28a745;
+  --text-color-fourth: #0284d0;
 
-	--background-color-first: #ffffff;
-	--background-color-second: #28a745;
-	--background-color-third: #0284d0;
-	--background-color-fourth: #f4f4f4;
-	--background-color-fifth: #333333;
+  --background-color-first: #ffffff;
+  --background-color-second: #28a745;
+  --background-color-third: #0284d0;
+  --background-color-fourth: #f4f4f4;
+  --background-color-fifth: #333333;
 
-	--hover-color-first: #2ebf4f;
+  --hover-color-first: #2ebf4f;
 
-	--action: cubic-bezier(0.4, 0, 0.2, 1);
+  --action: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -72,6 +72,44 @@ a {
 body {
   font-family: 'Open Sans';
   font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 1.35;
+
+  color: var(--hover-color-first);
+  background-color: var(--background-color-first);
+}
+
+.container {
+  max-width: 320px;
+
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section__title {
+  font-size: 32px;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+	
+  .container {
+    max-width: 768px;
+
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1360px) {
+  .container {
+    max-width: 1360px;
+
+    margin: 0 auto;
+    padding: 0 28px;
+  }
 }
