@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/goit_test/static/css/main.7acaea2f.css",
-    "main.js": "/goit_test/static/js/main.e6f907de.js",
-    "index.html": "/goit_test/index.html",
-    "main.7acaea2f.css.map": "/goit_test/static/css/main.7acaea2f.css.map",
-    "main.e6f907de.js.map": "/goit_test/static/js/main.e6f907de.js.map"
+    "main.css": "/softryzen_test/static/css/main.7acaea2f.css",
+    "main.js": "/softryzen_test/static/js/main.e6f907de.js",
+    "index.html": "/softryzen_test/index.html",
+    "main.7acaea2f.css.map": "/softryzen_test/static/css/main.7acaea2f.css.map",
+    "main.e6f907de.js.map": "/softryzen_test/static/js/main.e6f907de.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
