@@ -19,7 +19,7 @@ export const MainButton = styled.a`
     background: var(--background-color-second);
     &:hover,
     &:focus {
-      background: var(--hover-color-first);
+      opacity: 0.9;
     }
   }
 
@@ -48,7 +48,7 @@ export const MainButton = styled.a`
     background: var(--background-color-second);
     &:hover,
     &:focus {
-      background: var(--hover-color-first);
+      opacity: 0.9;
     }
   }
 `;
