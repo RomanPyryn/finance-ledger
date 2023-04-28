@@ -2,7 +2,7 @@
   "name": "softryzen_test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RomanPyryn.github.io/goit_test/",
+  "homepage": "https://RomanPyryn.github.io/softryzen_test/",
   "dependencies": {
 		"@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
