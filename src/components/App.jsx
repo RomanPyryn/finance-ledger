@@ -1,9 +1,11 @@
+import Header from './Header';
 // import Button from './Button';
 
 export const App = () => {
-	return (
-		<>
-			{/* <Button name={'button-hero'} text={'Read More'} />  */}
-		</>
-	);
+  return (
+    <>
+      <Header />
+      {/* <Button name={'button-hero'} text={'Read More'} />  */}
+    </>
+  );
 };
