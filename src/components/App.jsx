@@ -3,9 +3,7 @@
 export const App = () => {
 	return (
 		<>
-			
+			{/* <Button name={'button-hero'} text={'Read More'} />  */}
 		</>
 	);
 };
-
-{/* <Button name={'button-hero'} text={'Read More'} /> */}
