@@ -1,16 +1,9 @@
+// import Button from './Button';
+
 export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      SoftRyzen Test
-    </div>
-  );
+	return (
+		<></>
+	);
 };
+
+{/* <Button name={'button-hero'} text={'Read More'} /> */}

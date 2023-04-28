@@ -13,3 +13,65 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+	--text-color-first: #ffffff;
+	--text-color-second: #333333;
+	--text-color-third: #28a745;
+	--text-color-fourth: #0284d0;
+
+	--background-color-first: #ffffff;
+	--background-color-second: #28a745;
+	--background-color-third: #0284d0;
+	--background-color-fourth: #f4f4f4;
+	--background-color-fifth: #333333;
+
+	--hover-color-first: #2ebf4f;
+
+	--action: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
