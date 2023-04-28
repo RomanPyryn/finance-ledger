@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/softryzen_test/static/css/main.66a78c12.css",
+    "main.css": "/softryzen_test/static/css/main.ca2893c2.css",
     "main.js": "/softryzen_test/static/js/main.0a79a433.js",
     "index.html": "/softryzen_test/index.html",
-    "main.66a78c12.css.map": "/softryzen_test/static/css/main.66a78c12.css.map",
+    "main.ca2893c2.css.map": "/softryzen_test/static/css/main.ca2893c2.css.map",
     "main.0a79a433.js.map": "/softryzen_test/static/js/main.0a79a433.js.map"
   },
   "entrypoints": [
-    "static/css/main.66a78c12.css",
+    "static/css/main.ca2893c2.css",
     "static/js/main.0a79a433.js"
   ]
 }
