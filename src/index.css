@@ -140,6 +140,11 @@ body {
   color: var(--background-color-second);
 }
 
-.arrow-icon {
-  color: var(--background-color-first);
+.social-icon {
+	transition: all 300ms var(--action);
+}
+
+.social-icon:hover,
+.social-icon:focus {
+	color: var(--text-color-third);
 }

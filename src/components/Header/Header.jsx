@@ -4,7 +4,7 @@ import {
   HeaderContainer,
   Logo,
   GreenPartLogo,
-  NavigationList,
+	NavigationList,
   NavigationLink,
 } from './Header.styled';
 

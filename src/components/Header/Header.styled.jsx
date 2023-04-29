@@ -2,8 +2,8 @@ import styled from '@emotion/styled';
 
 export const MainHeader = styled.header`
   position: fixed;
-	top: 0;
-	left: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 22px 0;
   color: var(--text-color-first);
