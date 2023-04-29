@@ -1,0 +1,24 @@
+import styled from '@emotion/styled';
+
+export const CasesSection = styled.section`
+  text-align: center;
+  padding-top: 56px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    padding-top: 48px;
+  }
+  @media screen and (min-width: 1360px) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+`;
+
+export const CasesText = styled.p`
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 36px;
+  }
+`;

@@ -5,8 +5,12 @@ export const TeamSection = styled.section`
   padding-top: 72px;
   padding-bottom: 50px;
   @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
   @media screen and (min-width: 1360px) {
+    padding-top: 50px;
+    padding-bottom: 40px;
   }
 `;
 
@@ -19,6 +23,12 @@ export const TeamContent = styled.div`
 
 export const TeamText = styled.p`
   margin-bottom: 63px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 36px;
+  }
 `;
 
 export const Teamlist = styled.ul`
@@ -27,7 +37,7 @@ export const Teamlist = styled.ul`
   gap: 30px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
-		justify-content: space-between;
+    justify-content: space-between;
     gap: 18px;
   }
   @media screen and (min-width: 1360px) {
