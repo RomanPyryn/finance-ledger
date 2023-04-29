@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
 
-export const AboutSection = styled.section`
+export const BlogSection = styled.section`
   position: relative;
   width: 100%;
   color: var(--text-color-first);
-  background: var(--background-color-second);
+  background: var(--background-color-third);
 `;
 
-export const AboutContainer = styled.div`
+export const BlogContainer = styled.div`
   padding-top: 80px;
   padding-bottom: 80px;
   @media screen and (min-width: 768px) {
@@ -20,27 +20,27 @@ export const AboutContainer = styled.div`
   }
 `;
 
-export const AboutContent = styled.div`
+export const BlogContent = styled.div`
   @media screen and (min-width: 768px) {
-    margin-left: auto;
+    margin-right: auto;
     width: 368px;
-    padding-left: 32px;
+    padding-right: 32px;
   }
   @media screen and (min-width: 1360px) {
     width: 660px;
-    padding-left: 20px;
+    padding-right: 20px;
   }
 `;
 
-export const AboutText = styled.p`
+export const BlogText = styled.p`
   margin-bottom: 25px;
 `;
 
-export const AboutImgBox = styled.div`
+export const BlogImgBox = styled.div`
   width: 100%;
   height: 220px;
   top: 0;
-  left: 0;
+  right: 0;
   @media screen and (min-width: 768px) {
     position: absolute;
     width: 48%;

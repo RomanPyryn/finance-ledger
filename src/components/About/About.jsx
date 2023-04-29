@@ -1,4 +1,3 @@
-import {} from 'react-icons/io';
 import IMAGES from 'assets/img';
 import Button from 'components/Button/Button';
 import {
