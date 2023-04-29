@@ -2,7 +2,8 @@ import Header from './Header';
 import Hero from './Hero';
 import About from './About';
 import Blog from './Blog';
-import Footer from './Footer/Footer';
+import Footer from './Footer';
+import Contact from './Contact';
 
 export const App = () => {
   return (
@@ -10,7 +11,8 @@ export const App = () => {
       <Header />
       <Hero />
       <About />
-      <Blog />
+			<Blog />
+			<Contact />
       <Footer />
     </>
   );

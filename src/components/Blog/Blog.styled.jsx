@@ -8,15 +8,15 @@ export const BlogSection = styled.section`
 `;
 
 export const BlogContainer = styled.div`
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 48px;
+  padding-bottom: 60px;
   @media screen and (min-width: 768px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
   @media screen and (min-width: 1360px) {
     padding-top: 80px;
-    padding-bottom: 90px;
+    padding-bottom: 85px;
   }
 `;
 

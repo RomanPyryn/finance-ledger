@@ -10,7 +10,11 @@ const IMAGES = {
 	blog_jpg: require('../../assets/img/home/blog.jpg'),
   blog2x_jpg: require('../../assets/img/home/blog@2x.jpg'),
   blog_webp: require('../../assets/img/home/blog.webp'),
-  blog2x_webp: require('../../assets/img/home/blog@2x.webp'),
+	blog2x_webp: require('../../assets/img/home/blog@2x.webp'),
+	contact_jpg: require('../../assets/img/home/contact.jpg'),
+  contact2x_jpg: require('../../assets/img/home/contact@2x.jpg'),
+  contact_webp: require('../../assets/img/home/contact.webp'),
+  contact2x_webp: require('../../assets/img/home/contact@2x.webp'),
 };
 
 export default IMAGES;

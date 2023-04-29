@@ -43,7 +43,8 @@ export const MainButton = styled.a`
     }
   }
 
-  &.button-callback {
+  &.button-contact {
+    margin-top: 24px;
     padding: 16px 56px;
     background: var(--background-color-second);
     &:hover,
