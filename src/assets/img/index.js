@@ -14,7 +14,19 @@ const IMAGES = {
 	contact_jpg: require('../../assets/img/home/contact.jpg'),
   contact2x_jpg: require('../../assets/img/home/contact@2x.jpg'),
   contact_webp: require('../../assets/img/home/contact.webp'),
-  contact2x_webp: require('../../assets/img/home/contact@2x.webp'),
+	contact2x_webp: require('../../assets/img/home/contact@2x.webp'),
+	person1_jpg: require('../../assets/img/team/person1.jpg'),
+  person12x_jpg: require('../../assets/img/team/person1@2x.jpg'),
+  person1_webp: require('../../assets/img/team/person1.webp'),
+	person12x_webp: require('../../assets/img/team/person1@2x.webp'),
+	person2_jpg: require('../../assets/img/team/person2.jpg'),
+  person22x_jpg: require('../../assets/img/team/person2@2x.jpg'),
+  person2_webp: require('../../assets/img/team/person2.webp'),
+	person22x_webp: require('../../assets/img/team/person2@2x.webp'),
+	person3_jpg: require('../../assets/img/team/person3.jpg'),
+  person32x_jpg: require('../../assets/img/team/person3@2x.jpg'),
+  person3_webp: require('../../assets/img/team/person3.webp'),
+  person32x_webp: require('../../assets/img/team/person3@2x.webp'),
 };
 
 export default IMAGES;
