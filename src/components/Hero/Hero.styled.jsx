@@ -1,23 +1,30 @@
 import styled from '@emotion/styled';
 
 export const HeroSection = styled.section`
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin-top: 140px;
   width: 100%;
   text-align: center;
   color: var(--text-color-first);
+  @media screen and (min-width: 768px) {
+    margin-top: 78px;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-top: 120px;
+  }
 `;
 
 export const HeroContainer = styled.div`
   position: relative;
-  margin: 160px auto 104px;
+  padding-top: 40px;
+  padding-bottom: 92px;
   z-index: 2;
   @media screen and (min-width: 768px) {
-    margin: 378px auto;
+    padding-top: 300px;
+    padding-bottom: 377px;
   }
   @media screen and (min-width: 1360px) {
-    margin: 270px auto;
+    padding-top: 150px;
+    padding-bottom: 278px;
   }
 `;
 
@@ -49,10 +56,16 @@ export const HeroSubTitle = styled.h2`
 
 export const HeroImgBox = styled.div`
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 533px;
+  @media screen and (min-width: 768px) {
+    height: 1024px;
+  }
+  @media screen and (min-width: 1360px) {
+    height: 768px;
+  }
 `;
 
 export const HeroLayout = styled.div`
