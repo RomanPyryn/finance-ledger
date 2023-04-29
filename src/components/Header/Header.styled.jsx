@@ -1,12 +1,15 @@
 import styled from '@emotion/styled';
 
 export const MainHeader = styled.header`
+	position: fixed;
+	width: 100%;
   padding: 22px 0;
   color: var(--text-color-first);
-  background: var(--background-color-fifth);
+  background: transparent;
+	z-index: 10;
 `;
 
-export const Container = styled.div`
+export const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -48,6 +51,16 @@ export const NavigationList = styled.ul`
 export const NavigationLink = styled.a`
   &:hover,
   &:focus {
-    text-decoration: underline;
+    position: relative;
+		&::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--background-color-first);
+  }
   }
 `;

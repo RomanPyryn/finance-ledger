@@ -96,7 +96,7 @@ body {
   body {
     font-size: 18px;
   }
-	
+
   .container {
     max-width: 768px;
 
@@ -114,6 +114,29 @@ body {
   }
 }
 
+.bg_img {
+  position: relative;
+}
+
+.bg_img .layout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+	z-index: 1;
+}
+
+.bg_img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center;
+}
+
 .logo-icon {
-	color: var(--background-color-second);
+  color: var(--background-color-second);
 }

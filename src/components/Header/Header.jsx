@@ -1,10 +1,10 @@
 import { FaBookOpen } from 'react-icons/fa';
-import { MainHeader, Container, Logo, GreenPartLogo, NavigationList, NavigationLink } from './Header.styled';
+import { MainHeader, HeaderContainer, Logo, GreenPartLogo, NavigationList, NavigationLink } from './Header.styled';
 
 function Header() {
   return (
     <MainHeader>
-      <Container className="container">
+      <HeaderContainer className="container">
         <Logo href="./index.html">
           <FaBookOpen className='logo-icon' size={40}/>
           <GreenPartLogo>Finance</GreenPartLogo>
@@ -29,7 +29,7 @@ function Header() {
             </li>
           </NavigationList>
         </nav>
-      </Container>
+      </HeaderContainer>
     </MainHeader>
   );
 }
