@@ -1,4 +1,4 @@
-import {} from 'react-icons/fa';
+import { IoIosArrowForward } from 'react-icons/io';
 import IMAGES from 'assets/img';
 
 import {
@@ -7,8 +7,8 @@ import {
   HeroTitleBox,
   HeroTitle,
   HeroSubTitle,
-	HeroImgBox,
-	HeroLayout,
+  HeroImgBox,
+  HeroLayout,
 } from './Hero.styled';
 import Button from 'components/Button/Button';
 
@@ -22,10 +22,14 @@ function Hero() {
             We provide world class financial assistance
           </HeroSubTitle>
         </HeroTitleBox>
-        <Button name={'button-hero'} text={'Read More'} />
+        <Button
+          name={'button-hero'}
+          icon={<IoIosArrowForward className="arrow-icon" size={16} />}
+          text={'Read More'}
+        />
       </HeroContainer>
-			<HeroImgBox className="bg_img">
-				<HeroLayout className='layout'></HeroLayout>
+      <HeroImgBox className="bg_img">
+        <HeroLayout className="layout"></HeroLayout>
         <picture>
           <source
             srcSet={`${IMAGES.showcase_webp} 1x, ${IMAGES.showcase2x_webp} 2x`}

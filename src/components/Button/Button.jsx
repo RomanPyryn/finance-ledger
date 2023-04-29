@@ -1,9 +1,12 @@
 import { MainButton } from './Button.styled';
 
-function Button({ name, text }) {
-	return (
-		<MainButton className={name} >{text}</MainButton>
-	);
+function Button({ name, icon, text }) {
+  return (
+    <MainButton className={name}>
+      {icon}
+      {text}
+    </MainButton>
+  );
 }
 
 export default Button;

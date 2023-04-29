@@ -6,7 +6,7 @@ export const MainButton = styled.a`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   padding: 16px 32px;
   color: var(--text-color-first);
   font-size: inherit;

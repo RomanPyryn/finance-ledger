@@ -1,12 +1,19 @@
 import { FaBookOpen } from 'react-icons/fa';
-import { MainHeader, HeaderContainer, Logo, GreenPartLogo, NavigationList, NavigationLink } from './Header.styled';
+import {
+  MainHeader,
+  HeaderContainer,
+  Logo,
+  GreenPartLogo,
+  NavigationList,
+  NavigationLink,
+} from './Header.styled';
 
 function Header() {
   return (
     <MainHeader>
       <HeaderContainer className="container">
         <Logo href="./index.html">
-          <FaBookOpen className='logo-icon' size={40}/>
+          <FaBookOpen className="logo-icon" size={40} />
           <GreenPartLogo>Finance</GreenPartLogo>
           Ledger
         </Logo>
