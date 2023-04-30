@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/softryzen_test/static/css/main.dcf15c2c.css",
-    "main.js": "/softryzen_test/static/js/main.1f98eafb.js",
+    "main.css": "/softryzen_test/static/css/main.e404eef3.css",
+    "main.js": "/softryzen_test/static/js/main.59c2893a.js",
     "static/media/showcase@2x.jpg": "/softryzen_test/static/media/showcase@2x.73c58f9aec29be2efd5a.jpg",
     "static/media/showcase@2x.webp": "/softryzen_test/static/media/showcase@2x.6718cc6851409ea4b6ba.webp",
     "static/media/showcase.jpg": "/softryzen_test/static/media/showcase.51cab55d982ce4bcedb5.jpg",
@@ -55,11 +55,11 @@
     "static/media/cases2.webp": "/softryzen_test/static/media/cases2.979f90d7f0e5ed9ed242.webp",
     "static/media/cases5.webp": "/softryzen_test/static/media/cases5.e032dfbc6e1d381405ad.webp",
     "index.html": "/softryzen_test/index.html",
-    "main.dcf15c2c.css.map": "/softryzen_test/static/css/main.dcf15c2c.css.map",
-    "main.1f98eafb.js.map": "/softryzen_test/static/js/main.1f98eafb.js.map"
+    "main.e404eef3.css.map": "/softryzen_test/static/css/main.e404eef3.css.map",
+    "main.59c2893a.js.map": "/softryzen_test/static/js/main.59c2893a.js.map"
   },
   "entrypoints": [
-    "static/css/main.dcf15c2c.css",
-    "static/js/main.1f98eafb.js"
+    "static/css/main.e404eef3.css",
+    "static/js/main.59c2893a.js"
   ]
 }
