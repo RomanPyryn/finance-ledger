@@ -77,7 +77,7 @@ export const TeamOverlay = styled.div`
   background-color: rgba(0, 0, 0, 0.6);
 
   transform: translateY(101%);
-  transition: all 300ms var(--action);
+  transition: all 325ms var(--action);
 
   .team-item:hover &,
   .team-item:focus & {

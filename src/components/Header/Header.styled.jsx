@@ -27,7 +27,11 @@ export const Logo = styled.a`
   align-items: center;
   gap: 8px;
   font-size: 28px;
-  fill: var(--background-color-second);
+	transition: all 300ms var(--action);
+	&:hover .logo-icon,
+	&:focus .logo-icon {
+		scale: 1.1;
+	}
   @media screen and (min-width: 768px) {
     font-size: 35px;
   }
