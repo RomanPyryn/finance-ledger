@@ -159,3 +159,7 @@ body {
 .team-social-icon:focus {
   opacity: 0.8;
 }
+
+.warning-icon {
+	color: red;
+}

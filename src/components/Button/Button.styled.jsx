@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const MainButton = styled.a`
+export const MainButton = styled.button`
   cursor: pointer;
   display: inline-flex;
   flex-direction: row;

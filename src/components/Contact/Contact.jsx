@@ -1,3 +1,6 @@
+import { Formik, ErrorMessage } from 'formik';
+import { object, string } from 'yup';
+import { IoIosWarning } from 'react-icons/io';
 import IMAGES from 'assets/img';
 import Button from 'components/Button/Button';
 import {
@@ -10,7 +13,22 @@ import {
   ContactInput,
 } from './Contact.styled';
 
+let schema = object({
+  name: string().required(<div><IoIosWarning className='warning-icon' size={16} /> This is a required field</div>),
+  email: string().email().required(<div><IoIosWarning className='warning-icon' size={16} /> This is a required field</div>),
+});
+
+const initialValues = {
+	name: '',
+	email: '',
+}
+
 function Contact() {
+	const handleSubmit = (values, actions) => {
+		console.log(values);
+		console.log(actions);
+	}
+
   return (
     <ContactSection>
       <ContactImgBox className="bg_img">
@@ -31,22 +49,26 @@ function Contact() {
           <ContactTitle className="section-title">
             Request Callback
           </ContactTitle>
-          <ContactForm>
-            <ContactInput
-              type="text"
-              name="name"
-              placeholder="Enter your name"
-            />
-            <ContactInput
-              type="email"
-              name="email"
-              placeholder="Enter email*"
-            />
-            <Button name={'button-contact'} text={'Send'} type={'submit'} />
-          </ContactForm>
+          <Formik initialValues={initialValues} validationSchema={schema} onSubmit={handleSubmit}>
+            <ContactForm>
+              <ContactInput
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+							/>
+							<ErrorMessage name="name" />
+              <ContactInput
+                type="email"
+                name="email"
+                placeholder="Enter email*"
+							/>
+							<ErrorMessage name="email" />
+              <Button name={'button-contact'} text={'Send'} type={'submit'} />
+            </ContactForm>
+          </Formik>
         </ContactContent>
       </ContactContainer>
-    </ContactSection>
+		</ContactSection>
   );
 }
 

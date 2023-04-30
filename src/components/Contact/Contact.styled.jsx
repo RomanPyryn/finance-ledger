@@ -1,3 +1,4 @@
+import { Field, Form } from 'formik';
 import styled from '@emotion/styled';
 
 export const ContactSection = styled.section`
@@ -63,9 +64,9 @@ export const ContactImgBox = styled.div`
   }
 `;
 
-export const ContactForm = styled.form``;
+export const ContactForm = styled(Form)``;
 
-export const ContactInput = styled.input`
+export const ContactInput = styled(Field)`
   outline: none;
   color: var(--text-color-fifth);
   font-size: 16px;
