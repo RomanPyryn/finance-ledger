@@ -5,6 +5,12 @@ export const ContactSection = styled.section`
   width: 100%;
   color: var(--text-color-second);
   background: var(--background-color-fourth);
+	@media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1360px) {
+    margin-bottom: 0px;
+  }
 `;
 
 export const ContactContainer = styled.div`

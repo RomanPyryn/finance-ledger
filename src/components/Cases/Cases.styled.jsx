@@ -13,6 +13,22 @@ export const CasesSection = styled.section`
   }
 `;
 
+export const CasesList = styled.ul`
+	& li:not(:last-child) {
+		margin-bottom: 8px;
+	}
+	@media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    gap: 18px;
+  }
+  @media screen and (min-width: 1360px) {
+    grid-template-columns: repeat(3, 421px);
+    grid-column-gap: 20px;
+    grid-row-gap: 22px;
+  }
+`;
+
 export const CasesText = styled.p`
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {

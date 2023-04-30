@@ -32,15 +32,16 @@ export const TeamText = styled.p`
 `;
 
 export const Teamlist = styled.ul`
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  & li:not(:last-child) {
+		margin-bottom: 30px;
+	}
   @media screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
     gap: 18px;
   }
   @media screen and (min-width: 1360px) {
+    grid-template-columns: repeat(3, 420px);
     gap: 22px;
   }
 `;

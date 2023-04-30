@@ -1,5 +1,5 @@
 import IMAGES from 'assets/img';
-import { CasesSection, CasesText } from './Cases.styled';
+import { CasesSection, CasesText, CasesList } from './Cases.styled';
 
 function Cases() {
   return (
@@ -11,7 +11,7 @@ function Cases() {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!
       </CasesText>
-      <ul>
+      <CasesList>
         <li>
           <picture>
             <source
@@ -90,7 +90,7 @@ function Cases() {
             <img src={IMAGES.cases6_jpg} loading="eager" alt="City" />
           </picture>
         </li>
-      </ul>
+      </CasesList>
 			</div>
     </CasesSection>
   );
