@@ -10,7 +10,7 @@ import {
 
 function Blog() {
   return (
-    <BlogSection>
+    <BlogSection id="to-blog">
       <BlogImgBox className="bg_img">
         <picture>
           <source
@@ -34,7 +34,11 @@ function Blog() {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </BlogText>
-          <Button name={'button-blog'} text={'Read Our Blog'} />
+          <Button
+            onName={'button-blog'}
+            onText={'Read Our Blog'}
+            onType={'text'}
+          />
         </BlogContent>
       </BlogContainer>
     </BlogSection>

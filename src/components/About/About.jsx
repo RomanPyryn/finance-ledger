@@ -10,7 +10,7 @@ import {
 
 function About() {
   return (
-    <AboutSection>
+    <AboutSection id="to-about">
       <AboutImgBox className="bg_img">
         <picture>
           <source
@@ -34,7 +34,11 @@ function About() {
             harum illum dolore explicabo ab dolores itaque rerum temporibus
             doloribus iste maiores deleniti?
           </AboutText>
-          <Button name={'button-about'} text={'Read More'} />
+          <Button
+            onName={'button-about'}
+            onText={'Read More'}
+            onType={'text'}
+          />
         </AboutContent>
       </AboutContainer>
     </AboutSection>

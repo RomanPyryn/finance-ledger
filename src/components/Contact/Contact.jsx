@@ -1,4 +1,4 @@
-import { Formik, ErrorMessage } from 'formik';
+import { Formik, Form, ErrorMessage } from 'formik';
 import { object, string } from 'yup';
 import { IoIosWarning } from 'react-icons/io';
 import IMAGES from 'assets/img';
@@ -9,28 +9,36 @@ import {
   ContactContainer,
   ContactContent,
   ContactTitle,
-  ContactForm,
   ContactInput,
 } from './Contact.styled';
 
 let schema = object({
-  name: string().required(<div><IoIosWarning className='warning-icon' size={16} /> This is a required field</div>),
-  email: string().email().required(<div><IoIosWarning className='warning-icon' size={16} /> This is a required field</div>),
+  name: string().required(
+    <div>
+      <IoIosWarning className="warning-icon" size={16} /> This is a required
+      field
+    </div>
+  ),
+  email: string()
+    .email()
+    .required(
+      <div>
+        <IoIosWarning className="warning-icon" size={16} /> This is a required
+        field
+      </div>
+    ),
 });
 
 const initialValues = {
-	name: '',
-	email: '',
-}
+  name: '',
+  email: '',
+};
 
 function Contact() {
-	const handleSubmit = (values, actions) => {
-		console.log(values);
-		console.log(actions);
-	}
+  const handleSubmit = (values, actions) => {};
 
   return (
-    <ContactSection>
+    <ContactSection id="to-contact">
       <ContactImgBox className="bg_img">
         <picture>
           <source
@@ -49,26 +57,34 @@ function Contact() {
           <ContactTitle className="section-title">
             Request Callback
           </ContactTitle>
-          <Formik initialValues={initialValues} validationSchema={schema} onSubmit={handleSubmit}>
-            <ContactForm>
+          <Formik
+            initialValues={initialValues}
+            validationSchema={schema}
+            onSubmit={handleSubmit}
+          >
+            <Form>
               <ContactInput
                 type="text"
                 name="name"
                 placeholder="Enter your name"
-							/>
-							<ErrorMessage name="name" />
+              />
+              <ErrorMessage name="name" />
               <ContactInput
                 type="email"
                 name="email"
                 placeholder="Enter email*"
-							/>
-							<ErrorMessage name="email" />
-              <Button name={'button-contact'} text={'Send'} type={'submit'} />
-            </ContactForm>
+              />
+              <ErrorMessage name="email" />
+              <Button
+                onName={'button-contact'}
+                onText={'Send'}
+                onType={'submit'}
+              />
+            </Form>
           </Formik>
         </ContactContent>
       </ContactContainer>
-		</ContactSection>
+    </ContactSection>
   );
 }
 

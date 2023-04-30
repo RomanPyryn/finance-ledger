@@ -1,4 +1,4 @@
-import { Field, Form } from 'formik';
+import { Field } from 'formik';
 import styled from '@emotion/styled';
 
 export const ContactSection = styled.section`
@@ -6,7 +6,7 @@ export const ContactSection = styled.section`
   width: 100%;
   color: var(--text-color-second);
   background: var(--background-color-fourth);
-	@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 40px;
   }
   @media screen and (min-width: 1360px) {
@@ -63,8 +63,6 @@ export const ContactImgBox = styled.div`
     width: 49%;
   }
 `;
-
-export const ContactForm = styled(Form)``;
 
 export const ContactInput = styled(Field)`
   outline: none;

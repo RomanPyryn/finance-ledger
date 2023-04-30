@@ -1,24 +1,23 @@
 import { useEffect } from 'react';
 import { FaBookOpen } from 'react-icons/fa';
-import headerScroll from '../../js/header-scroll'
+import headerScroll from '../../js/header-scroll';
 import {
   MainHeader,
   HeaderContainer,
   Logo,
   GreenPartLogo,
-	NavigationList,
+  NavigationList,
   NavigationLink,
 } from './Header.styled';
 
-
 function Header() {
-	const screenWidth = window.screen.width;
-	
-	useEffect(() => {
-		headerScroll();
-		window.addEventListener('resize', headerScroll)
-	}, [screenWidth])
-	
+  const screenWidth = window.screen.width;
+
+  useEffect(() => {
+    headerScroll();
+    window.addEventListener('resize', headerScroll);
+  }, [screenWidth]);
+
   return (
     <MainHeader>
       <HeaderContainer className="container">

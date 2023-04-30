@@ -1,6 +1,5 @@
 import { IoIosArrowForward } from 'react-icons/io';
 import IMAGES from 'assets/img';
-
 import {
   HeroSection,
   HeroContainer,
@@ -23,9 +22,10 @@ function Hero() {
           </HeroSubTitle>
         </HeroTitleBox>
         <Button
-          name={'button-hero'}
-          icon={<IoIosArrowForward className="arrow-icon" size={16} />}
-          text={'Read More'}
+          onName={'button-hero'}
+          onIcon={<IoIosArrowForward className="arrow-icon" size={16} />}
+          onText={'Read More'}
+          onType={'text'}
         />
       </HeroContainer>
       <HeroImgBox className="bg_img">
