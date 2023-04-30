@@ -149,3 +149,13 @@ body {
 .social-icon:focus {
   color: var(--text-color-third);
 }
+
+.team-social-icon {
+  color: var(--text-color-first);
+  transition: all 300ms var(--action);
+}
+
+.team-social-icon:hover,
+.team-social-icon:focus {
+  opacity: 0.8;
+}

@@ -8,12 +8,12 @@ function Footer() {
         <FooterList>
           <li>
             <a href="https://facebook.com/">
-              <FaFacebook className="social-icon" size={40} />
+              <FaFacebook className="social-icon" size={35} />
             </a>
           </li>
           <li>
             <a href="https://twitter.com/">
-              <FaTwitter className="social-icon" size={40} />
+              <FaTwitter className="social-icon" size={35} />
             </a>
           </li>
           <li>
@@ -23,7 +23,7 @@ function Footer() {
           </li>
           <li>
             <a href="https://linkedin.com/">
-              <FaLinkedinIn className="social-icon" size={40} />
+              <FaLinkedinIn className="social-icon" size={35} />
             </a>
           </li>
         </FooterList>
