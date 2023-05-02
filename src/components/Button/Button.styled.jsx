@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const MainButton = styled.button`
+export const MainButton = styled.a`
   cursor: pointer;
   display: inline-flex;
   flex-direction: row;
@@ -40,16 +40,6 @@ export const MainButton = styled.button`
       background: var(--background-color-first);
       color: var(--text-color-fourth);
       border: 1px solid var(--background-color-third);
-    }
-  }
-
-  &.button-contact {
-    margin-top: 24px;
-    padding: 16px 56px;
-    background: var(--background-color-second);
-    &:hover,
-    &:focus {
-      opacity: 0.9;
     }
   }
 `;

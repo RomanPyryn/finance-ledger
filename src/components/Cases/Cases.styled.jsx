@@ -29,6 +29,13 @@ export const CasesList = styled.ul`
   }
 `;
 
+export const CasesItem = styled.li`
+	&:hover,
+	&:focus {
+		opacity: 0.8;
+	}
+`;
+
 export const CasesText = styled.p`
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {

@@ -2,14 +2,14 @@ import { Formik, Form, ErrorMessage } from 'formik';
 import { object, string } from 'yup';
 import { IoIosWarning } from 'react-icons/io';
 import IMAGES from 'assets/img';
-import Button from 'components/Button/Button';
 import {
   ContactSection,
   ContactImgBox,
   ContactContainer,
   ContactContent,
   ContactTitle,
-  ContactInput,
+	ContactInput,
+	ContactBtn,
 } from './Contact.styled';
 
 let schema = object({
@@ -35,7 +35,7 @@ const initialValues = {
 };
 
 function Contact() {
-  const handleSubmit = (values, actions) => {};
+  // const handleSubmit = (values, actions) => {};
 
   return (
     <ContactSection id="to-contact">
@@ -60,26 +60,23 @@ function Contact() {
           <Formik
             initialValues={initialValues}
             validationSchema={schema}
-            onSubmit={handleSubmit}
+            onSubmit="submit"
           >
-            <Form>
+            <Form name="contact" method="post" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <ContactInput
                 type="text"
                 name="name"
                 placeholder="Enter your name"
               />
-              <ErrorMessage name="name" />
+              <ErrorMessage component="div" name="name" />
               <ContactInput
                 type="email"
                 name="email"
                 placeholder="Enter email*"
               />
-              <ErrorMessage name="email" />
-              <Button
-                onName={'button-contact'}
-                onText={'Send'}
-                onType={'submit'}
-              />
+              <ErrorMessage component="div" name="email" />
+							<ContactBtn type='submit'>Send</ContactBtn>
             </Form>
           </Formik>
         </ContactContent>

@@ -79,3 +79,24 @@ export const ContactInput = styled(Field)`
     font-size: 18px;
   }
 `;
+
+export const ContactBtn = styled.button`
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 16px 56px;
+  color: var(--text-color-first);
+  font-size: inherit;
+  border: none;
+  border-radius: 5px;
+  background: var(--background-color-second);
+  transition: all 300ms var(--action);
+  &:hover,
+  &:focus {
+    opacity: 0.9;
+  }
+`;

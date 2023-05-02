@@ -1,29 +1,30 @@
 import styled from '@emotion/styled';
 
 export const HeroSection = styled.section`
-  margin-top: 140px;
+	position: relative;
+	height: 533px;
   width: 100%;
   text-align: center;
   color: var(--text-color-first);
   @media screen and (min-width: 768px) {
-    margin-top: 78px;
+    height: 1024px;
   }
   @media screen and (min-width: 1360px) {
-    margin-top: 120px;
+    height: 768px;
   }
 `;
 
 export const HeroContainer = styled.div`
   position: relative;
-  padding-top: 40px;
+  padding-top: 180px;
   padding-bottom: 92px;
   z-index: 2;
   @media screen and (min-width: 768px) {
-    padding-top: 300px;
+    padding-top: 380px;
     padding-bottom: 377px;
   }
   @media screen and (min-width: 1360px) {
-    padding-top: 150px;
+    padding-top: 270px;
     padding-bottom: 278px;
   }
 `;
