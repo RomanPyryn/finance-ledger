@@ -1,8 +1,8 @@
 {
-  "name": "softryzen_test",
+  "name": "finance_ledger",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RomanPyryn.github.io/softryzen_test/",
+  "homepage": "https://RomanPyryn.github.io/finance_ledger/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
