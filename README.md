@@ -12,4 +12,6 @@ Using:
 
 -React-icons;
 
+-React Toastify;
+
 -Prop-types

@@ -1,13 +1,13 @@
 const headerScroll = () => {
   const header = document.querySelector('header');
   const screenWidth = window.screen.width;
-  let width = 70;
+  let height = 50;
   if (screenWidth < 767) {
-    width = 120;
+    height = 70;
   }
 
   window.addEventListener('scroll', function () {
-    if (window.scrollY >= width) {
+    if (window.scrollY >= height) {
       return (header.style.backgroundColor = 'rgba(0, 0, 0, 0.8)');
     } else {
       return (header.style.backgroundColor = 'transparent');

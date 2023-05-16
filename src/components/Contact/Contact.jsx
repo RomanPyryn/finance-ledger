@@ -1,6 +1,7 @@
 import { Formik, Form, ErrorMessage } from 'formik';
 import { object, string } from 'yup';
 import { IoIosWarning } from 'react-icons/io';
+import { toast } from 'react-toastify';
 import IMAGES from 'assets/img';
 import {
   ContactSection,
@@ -8,17 +9,20 @@ import {
   ContactContainer,
   ContactContent,
   ContactTitle,
-	ContactInput,
-	ContactBtn,
+  ContactInput,
+  ContactBtn,
 } from './Contact.styled';
 
 let schema = object({
-  name: string().required(
-    <div>
-      <IoIosWarning className="warning-icon" size={16} /> This is a required
-      field
-    </div>
-  ),
+  name: string()
+    .min(3, 'Too short name.')
+    .max(16, 'Name too long.')
+    .required(
+      <div>
+        <IoIosWarning className="warning-icon" size={16} /> This is a required
+        field
+      </div>
+    ),
   email: string()
     .email()
     .required(
@@ -35,7 +39,10 @@ const initialValues = {
 };
 
 function Contact() {
-  // const handleSubmit = (values, actions) => {};
+  const handleSubmit = (values, actions) => {
+    toast.success(`Hi, "${values.name}"! We will contact you soon.`);
+    actions.resetForm();
+  };
 
   return (
     <ContactSection id="to-contact">
@@ -60,7 +67,7 @@ function Contact() {
           <Formik
             initialValues={initialValues}
             validationSchema={schema}
-            onSubmit="submit"
+            onSubmit={handleSubmit}
           >
             <Form name="contact" method="post" data-netlify="true">
               <input type="hidden" name="form-name" value="contact" />
@@ -76,7 +83,7 @@ function Contact() {
                 placeholder="Enter email*"
               />
               <ErrorMessage component="div" name="email" />
-							<ContactBtn type='submit'>Send</ContactBtn>
+              <ContactBtn type="submit">Send</ContactBtn>
             </Form>
           </Formik>
         </ContactContent>
