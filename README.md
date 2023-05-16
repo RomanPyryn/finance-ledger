@@ -1,6 +1,6 @@
-SoftRyzen Test
+FINANCE LEDGER
 
-Create on React
+Created on React
 
 Using:
 

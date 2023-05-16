@@ -1,8 +1,8 @@
 {
-  "name": "finance_ledger",
+  "name": "finance-ledger",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://RomanPyryn.github.io/finance_ledger/",
+  "homepage": "https://RomanPyryn.github.io/finance-ledger/",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
